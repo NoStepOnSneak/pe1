@@ -1,3 +1,7 @@
+.header {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url(../media/AMOS-17.jpg);
+}
+
 #formWrapper {
     background-color: #333;
     width: 100%;
