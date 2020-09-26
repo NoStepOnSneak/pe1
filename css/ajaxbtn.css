@@ -1,0 +1,59 @@
+.btn-ajax-master-container {
+    padding: 10px 0;
+}
+
+.btn-ajax-container {
+    display: flex;
+    flex-direction: column;
+    width: auto;
+    margin: 0 auto;
+}
+
+.btn-ajax {
+    flex: 1;
+    display: inline-block;
+    padding: 10px;
+    margin: 10px 20%;
+    background: #555;
+    color: #409488;
+    text-align: center;
+    border-radius: 2em;
+    transition: background-color 0.2s;
+    font-weight: 400;
+    letter-spacing: 0.02em;
+}
+
+.btn-ajax:hover,
+.btn-ajax:active,
+.btn-active {
+    cursor: pointer;
+    background-color: #444;
+}
+
+/*****************************************************************************
+* SMALLER SCREENS *
+*****************************************************************************/
+
+@media only screen and (min-width: 701px) and (max-width: 979px) {
+    
+}
+
+/*****************************************************************************
+* Larger screens *
+*****************************************************************************/
+
+@media only screen and (min-width: 980px) {
+    .btn-ajax-master-container {
+        padding: 25px 0;
+    }
+    
+    .btn-ajax-container {
+        flex-direction: row;
+        width: 40em;
+    }
+    
+    .btn-ajax {
+        padding: 0.6em;
+        margin: 0 1em;
+    }
+}

@@ -1,0 +1,70 @@
+.header {
+    width: 100%;
+    min-height: calc(100vh - 80px);
+    background-size: cover;
+    background-position: center center;
+    text-align: center;
+    padding: 10% 2%;
+    color: #efefef;;
+}
+
+h1 {
+    display: inline-block;
+    font-size: 150%;
+    padding: 0.6em;
+    border-bottom: 3px solid #207066;
+    border-radius: 10%;
+    margin: 1em 0;
+}
+
+h2 {
+    font-size: 100%;
+    font-weight: 400;
+    letter-spacing: 0.03em;
+    margin: auto;
+    margin-top: 2em;
+    max-width: 60%;
+}
+
+/*****************************************************************************
+* SMALLER SCREENS *
+*****************************************************************************/
+
+@media only screen and (min-width: 701px) and (max-width: 979px) {
+    .header {
+        min-height: calc(100vh - 85px);
+        padding: 10% 0;
+    }
+    
+    h1 {
+        font-size: 200%;
+        margin-bottom: 1em;
+    }
+    
+    h2 {
+        font-size: 120%;
+        font-weight: 400;
+    }
+}
+
+/*****************************************************************************
+* Larger screens *
+*****************************************************************************/
+
+@media only screen and (min-width: 980px) {
+    .header {
+        min-height: calc(100vh - 85px);
+        padding: 10% 0;
+    }
+    
+    h1 {
+        font-size: 220%;
+        margin-bottom: 1em;
+    }
+    
+    h2 {
+        font-size: 120%;
+        font-weight: 400;
+        max-width: 50%;
+    }
+}

@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="keywords" content="spacex, space exploration, elon musk, snake jazz">
+        <meta name="description" content="Send us your questions here">
+        <meta name="author" content="Space Exploration Technologies Corp.">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+        <link rel="stylesheet" type="text/css" href="css/main.css">
+        <link rel="stylesheet" type="text/css" href="css/contact.css">
+    
+        <title>SpaceX Tech</title>
+    </head>
+
+<body>
+
+    <div class="nav-bar-top">
+        <ul class="nav-top-list">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="launches.html">Launches</a></li>
+            <li><a href="tech.html">Technology</a></li>
+            <li><a href="track.html">Track SpaceX</a></li>
+            <li><a href="contact.html" class="active">Contact Us</a></li>
+        </ul>
+
+        <div id="mobileMenu">
+            <div class="row clear">
+                <div class="mobile-logo"><img id="mobLogo" src="media/spacex-logo-crop.png"></div>
+                <ion-icon id="mobIcon" name="menu-outline"></ion-icon>    
+            </div>
+            <div id="mobList">
+                <ul class="nav-mobile-list">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="launches.html">Launches</a></li>
+                    <li><a href="tech.html">Technology</a></li>
+                    <li><a href="track.html">Track SpaceX</a></li>
+                    <li><a href="contact.html" class="mob-active">Contact Us</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <div class="page-wrapper">
+        <div id="formWrapper">
+            <div id="formContainer">
+                <form id="contactForm">
+                    <div class="form-content">
+                        <label for="name">Name</label>
+                        <input type="text" class="form-input" name="name" id="name" placeholder="Name">
+                        <div class="invalid-form" id="invalidName">Please enter your name</div>
+                    </div>
+                    <div class="form-content">
+                        <label for="email">Email</label>
+                        <input type="email" class="form-input" name="email" id="email" placeholder="email@example.com">
+                        <div class="invalid-form" id="invalidEmail">Please enter a valid email adress</div>
+                    </div>
+                    <div class="form-content">
+                        <label for="description">Description</label>
+                        <textarea class="form-input" name="description" id="description" placeholder="Short description" maxlength="150"></textarea>
+                        <div class="invalid-form" id="invalidDescription">Please enter a short description</div>
+                        <div id="descriptionCounter">0/150</div>
+                    </div>
+                    <div class="form-content">
+                        <label for="media">Upload image (jpeg/png)</label>
+                        <input type="file" class="form-input" name="media" id="media" accept="image/png, image/jpeg">
+                        <div class="invalid-form" id="invalidMedia">Please upload an image</div>
+                    </div>
+
+                    <div id="submitWrap">
+                        <button type="submit" class="btn-submit" id="submit">Submit</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+    
+    <footer>
+
+        <div class="footer-content clear">
+            <p>SpaceX &copy; 2020</p>
+            <a href="#">Twitter</a>
+            <a href="#">YouTube</a>
+            <a href="#">Instagram</a>
+            <a href="#">Flickr</a>
+            <a href="#">LinkedIn</a>
+            <a href="#">Privacy Policy</a>
+        </div>
+
+    </footer>
+
+    <script src="https://unpkg.com/ionicons@5.1.2/dist/ionicons.js"></script>
+    <script src="js/navbar.js"></script>
+    <script src="js/formValidation.js"></script>
+</body>

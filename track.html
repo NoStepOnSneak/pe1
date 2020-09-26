@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="keywords" content="spacex, space exploration, elon musk, snake jazz">
+    <meta name="description" content="Track SpaceX's Starlink satellites, landing pads and launchpads">
+    <meta name="author" content="Space Exploration Technologies Corp.">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" type="text/css" href="css/main.css">
+    <link rel="stylesheet" type="text/css" href="css/track.css">    
+
+    <title>Track SpaceX</title>
+</head>
+
+<body>
+
+    <div class="nav-bar-top">
+        <ul class="nav-top-list">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="launches.html">Launches</a></li>
+            <li><a href="tech.html">Technology</a></li>
+            <li><a href="track.html" class="active">Track SpaceX</a></li>
+            <li><a href="contact.html">Contact Us</a></li>
+        </ul>
+
+        <div id="mobileMenu">
+            <div class="row clear">
+                <div class="mobile-logo"><img id="mobLogo" src="media/spacex-logo-crop.png"></div>
+                <ion-icon id="mobIcon" name="menu-outline"></ion-icon>    
+            </div>
+            <div id="mobList">
+                <ul class="nav-mobile-list">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="launches.html">Launches</a></li>
+                    <li><a href="tech.html">Technology</a></li>
+                    <li><a href="track.html" class="mob-active">Track SpaceX</a></li>
+                    <li><a href="contact.html">Contact Us</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <div class="page-wrapper">
+
+        <header>
+            <div class="header">
+                <h1>Track our satellites</h1>
+
+                <h2>Use the map below to see the locations of SpaceX technology throughout the world</h2>
+            </div>
+        </header>
+
+        <div class="canvas-master-container">
+
+            <div class="btn-ajax-master-container">
+                <div class="btn-ajax-container">
+                    <div class="btn-ajax" data-apilink="starlink">Starlink Satellites</div>
+                    <div class="btn-ajax" data-apilink="landpads">Landing pads</div>
+                    <div class="btn-ajax" data-apilink="launchpads">Launch pads</div>        
+                </div>
+            </div>
+
+
+            <canvas class="track-container" id="canvas" width="1707" height="853">
+
+                
+                
+            </canvas>
+
+        </div>
+
+    </div>
+
+    <footer>
+
+        <div class="footer-content clear">
+            <p>SpaceX &copy; 2020</p>
+            <a href="#">Twitter</a>
+            <a href="#">YouTube</a>
+            <a href="#">Instagram</a>
+            <a href="#">Flickr</a>
+            <a href="#">LinkedIn</a>
+            <a href="#">Privacy Policy</a>
+        </div>
+
+    </footer>
+
+    <script src="https://unpkg.com/ionicons@5.1.2/dist/ionicons.js"></script>
+    <script src="js/navbar.js"></script>
+    <script src="js/track.js"></script>
+</body>

@@ -1,0 +1,74 @@
+.calendar-container {
+    display: flex;
+    flex-direction: column;
+    width: 95%;
+    height: auto;
+    padding: 20px;
+    margin: 0 auto;
+    font-size: 75%;
+    position: relative;
+}
+
+table {
+    width: 100%;
+}
+
+.cal-btn {
+    width: 30%;
+    height: 40px;
+    margin: 10px 0;
+    border: none;
+    margin-right: 3.96%;
+}
+
+.cal-btn:active {
+    background: #dfdfdf;
+}
+
+button:last-child {
+    margin-right: 0;
+}
+
+.calendar-title {
+    text-align: center;
+}
+
+tr {
+    height: 100%;
+}
+
+td {
+    padding: 10px;
+    text-align: center;
+    width: calc(100% / 7)
+}
+
+.today {
+    background: #ddd;
+    color: #000;
+}
+
+.day-of-launch {
+    border: 1px solid #ddd;
+}
+
+
+/*****************************************************************************
+* SMALLER SCREENS *
+*****************************************************************************/
+
+@media only screen and (min-width: 701px) and (max-width: 979px) {
+    .calendar-container {
+        width: 80%;
+    }    
+}
+
+/*****************************************************************************
+* Larger screens *
+*****************************************************************************/
+
+@media only screen and (min-width: 980px) {
+    .calendar-container {
+        width: 90%;
+    }
+}

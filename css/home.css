@@ -1,0 +1,145 @@
+.page-wrapper {
+    padding-top: 0;
+}
+
+.tile-super-container {
+    position: relative;
+    height: 200vh;
+    width: 100%;
+}
+
+.tile-row {
+    height: 100vh;
+}
+
+.tile-container {
+    float: left;
+    height: 50vh;
+    width: 100%;
+    border: 1px solid #ddd;
+    overflow: hidden;
+}
+
+.tile {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    background-position: center center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    overflow: hidden;
+    transition: transform 0.2s ease-out;
+}
+
+.tile h2 {
+    position: absolute;
+    top: 35%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-transform: uppercase;
+    text-align: center;
+    font-size: 150%;
+    font-weight: 600;
+}
+
+.tile:hover,
+.tile:active {
+    transform: scale(1.05);
+}
+
+.launches-link .tile {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../media/Arabsat-6A_1.jpg);
+}
+
+.tech-link .tile {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../media/Crew\ Demo-1_1.jpg);
+}
+
+.track-link .tile {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../media/CRS-19.jpg);
+}
+
+.contact-link .tile {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../media/Starlink.jpg);
+}
+
+.spacex-logo {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    
+    width: 90%;
+    height: auto;
+    background-color: #207066;
+    border-radius: 80px;
+    padding: 20px 5px 20px 50px;
+
+    z-index: 998;
+}
+
+#spacex-logo {
+    width: 100%;
+    transition: all 0.2s;
+}
+
+.spacex-logo:hover > #spacex-logo {
+    transform: scale(1.05);
+}
+
+/*****************************************************************************
+* SMALLER SCREENS *
+*****************************************************************************/
+
+@media only screen and (min-width: 701px) and (max-width: 979px) {
+
+    .tile-super-container {
+        height: 100vh;
+    }
+    
+    .tile-row {
+        height: 50%;
+    }
+    
+    .tile-container {
+        height: 100%;
+        width: 50%;
+    }
+    
+    .tile h2 {
+        font-size: 200%;
+    }
+           
+    .spacex-logo {        
+        width: 40%;
+        padding: 40px 20px 40px 40px;
+    }
+}
+
+/*****************************************************************************
+* Larger screens *
+*****************************************************************************/
+
+@media only screen and (min-width: 980px) {
+    .tile-super-container {
+        height: 100vh;
+    }
+    
+    .tile-row {
+        height: 50%;
+    }
+    
+    .tile-container {
+        height: 100%;
+        width: 50%;
+    }
+    
+    .tile h2 {
+        font-size: 200%;
+    }
+           
+    .spacex-logo {        
+        width: 35%;
+        padding: 50px 20px 50px 60px;
+    }
+}

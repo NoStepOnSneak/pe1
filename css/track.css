@@ -1,0 +1,31 @@
+.header {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url(../media/CRS-15.jpg);
+}
+
+.canvas-master-container {
+    min-height: 100vh;
+    width: 100%;
+    background-color: #333;
+}
+
+#canvas {
+    background-image: url(../media/worldmap.jpg);
+    background-size: cover;
+    border-radius: 4em;
+}
+
+/*****************************************************************************
+* SMALLER SCREENS *
+*****************************************************************************/
+
+@media only screen and (min-width: 701px) and (max-width: 979px) {
+
+}
+
+/*****************************************************************************
+* Larger screens *
+*****************************************************************************/
+
+@media only screen and (min-width: 980px) {
+    
+}

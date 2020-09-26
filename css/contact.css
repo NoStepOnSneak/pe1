@@ -1,0 +1,115 @@
+#formWrapper {
+    background-color: #333;
+    width: 100%;
+    min-height: calc(100vh - 80px);
+    padding: 20px 0;
+}
+
+#formContainer {
+    width: 95%;
+    min-height: 80vh;
+    margin: 0 auto;
+    padding: 20px;
+    border: 2px solid #207066;
+    background-color: #555;
+    border-radius: 40px;
+}
+
+#contactForm {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    width: 100%;
+}
+
+.form-content {
+    flex: 1;
+    width: 90%;
+    margin: 0 auto;
+    position: relative;
+}
+
+.invalid-form {
+    display: none;
+    color: #ff6666;
+}
+
+.form-input {
+    width: 100%;
+    min-height: 40px;
+    text-align: left;
+    padding: 2px 0.2em;
+    margin-top: 10px;
+}
+
+#description {
+    min-height: 80px;
+}
+
+#descriptionCounter {
+    font-size: 70%;
+    position: absolute;
+    top: 5%;
+    right: 2%;
+    z-index: 997;
+}
+
+#submitWrap {
+    text-align: center;
+}
+
+#submit {
+    font-size: 80%;
+    letter-spacing: 0.1em;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 10px;
+    background-color: #207066;
+    color: #ddd;
+    width: fit-content;
+    transition: all 0.1s ease-out;
+}
+
+#submit:hover,
+#submit:active {
+    background-color: #257671;
+    color: #000;
+}
+
+/*****************************************************************************
+* SMALLER SCREENS *
+*****************************************************************************/
+
+@media only screen and (min-width: 701px) and (max-width: 979px) {
+    #formWrapper {
+        min-height: calc(100vh - 85px);
+    }
+    
+    #formContainer {
+        width: 80%;
+        margin: 20px auto;
+    }
+    
+    .form-content {
+        width: 80%;
+    }
+}
+
+/*****************************************************************************
+* Larger screens *
+*****************************************************************************/
+
+@media only screen and (min-width: 980px) {
+    #formWrapper {
+        min-height: calc(100vh - 85px);
+    }
+    
+    #formContainer {
+        width: 50%;
+        margin: 20px auto;
+    }
+    
+    .form-content {
+        width: 60%;
+    }
+}

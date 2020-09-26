@@ -1,0 +1,118 @@
+.nav-bar-top {
+    width: 100%;
+    font-size: 100%;
+    position: fixed;
+    top: 0;
+    background-color: #207066;
+
+    z-index: 999;
+}
+
+.nav-top-list {
+    display: none;
+    flex-direction: row;
+    padding: 30px 0;
+}
+
+.nav-top-list li {
+    list-style: none;
+    flex: 1;
+    text-align: center;
+}
+
+.nav-top-list li a {
+    font-weight: bold;
+    color: #efefef;
+    padding-bottom: 5px;
+    border-bottom: transparent;
+    transition: all 0.5s;
+}
+
+.nav-top-list li a:hover {
+    border-bottom: 1px solid #efefef;
+}
+
+a.active {
+    border-bottom: 1px solid #efefef !important;
+}
+
+
+/****************************************************************
+* MOBILE NAVIGATION
+****************************************************************/
+
+#mobileMenu {
+    display: block;
+}
+
+
+#mobLogo {
+    float: left;
+    width: 40%;
+}
+
+#mobIcon {
+    font-size: 200%;
+    float: right;
+}
+
+#mobIcon:hover,
+#mobIcon:active {
+    cursor: pointer;
+}
+
+#mobList {
+    border-top: none;
+    height: 0;
+    overflow: hidden;
+}
+
+.nav-mobile-list {
+    padding: 10px 20px;
+    text-align: right;
+    font-weight: bold;
+}
+
+.nav-mobile-list li {
+    padding: 5px 0;
+    list-style-type: none;
+}
+
+.mob-active {
+    color: #333;
+}
+
+
+
+/*****************************************************************************
+* SMALLER SCREENS *
+*****************************************************************************/
+
+@media only screen and (min-width: 701px) and (max-width: 979px) {
+
+    .nav-top-list {
+        display: flex;
+    }
+    
+    #mobileMenu {
+        display: none;
+    }
+    
+    
+}
+
+/*****************************************************************************
+* Larger screens *
+*****************************************************************************/
+
+@media only screen and (min-width: 980px) {
+    
+    .nav-top-list {
+        display: flex;
+    }
+        
+    #mobileMenu {
+        display: none;
+    }
+
+}

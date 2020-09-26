@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="keywords" content="spacex, space exploration, elon musk, snake jazz">
+    <meta name="description" content="Here you can keep track of the future launches of SpaceX">
+    <meta name="author" content="Space Exploration Technologies Corp.">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" type="text/css" href="css/main.css">
+    <link rel="stylesheet" type="text/css" href="css/launches.css">
+
+    <title>SpaceX Launches</title>
+</head>
+
+<body>
+
+    <div class="nav-bar-top">
+        <ul class="nav-top-list">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="launches.html" class="active">Launches</a></li>
+            <li><a href="tech.html">Technology</a></li>
+            <li><a href="track.html">Track SpaceX</a></li>
+            <li><a href="contact.html">Contact Us</a></li>
+        </ul>
+
+        <div id="mobileMenu">
+            <div class="row clear">
+                <div class="mobile-logo"><img id="mobLogo" src="media/spacex-logo-crop.png"></div>
+                <ion-icon id="mobIcon" name="menu-outline"></ion-icon>    
+            </div>
+            <div id="mobList">
+                <ul class="nav-mobile-list">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="launches.html" class="mob-active">Launches</a></li>
+                    <li><a href="tech.html">Technology</a></li>
+                    <li><a href="track.html">Track SpaceX</a></li>
+                    <li><a href="contact.html">Contact Us</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <div class="page-wrapper">
+
+        <header>
+            <div class="header">
+                <h1>See upcoming SpaceX launches</h1>
+
+                <h2>Use this page to keep track of our future rocket launches</h2>
+            </div>
+        </header>
+
+
+        <main>
+            <div class="launches-tracker">
+
+                <div class="grid-container col-3-100vw">
+    
+                    <div class="col-1-3">
+                        <div class="next-launch-container">
+        
+                            <div class="next-launch-title">
+                                <h2>Next Launch</h2>
+                            </div>
+        
+                            <div class="next-launch-info"></div>
+
+                            <div class="launch-countdown">
+                                <div class="countdown-days">
+                                    <div class="countdown-title">Days</div>
+                                </div>
+                                <div class="countdown-hours">
+                                    <div class="countdown-title">Hours</div>
+                                </div>
+                                <div class="countdown-minutes">
+                                    <div class="countdown-title">Minutes</div>
+                                </div>
+                                <div class="countdown-seconds">
+                                    <div class="countdown-title">Seconds</div>
+                                </div>
+                            </div>
+        
+                        </div>
+                    </div>
+        
+                    <div class="col-1-3">
+                        <div class="calendar-container">
+                            <div class="calendar">
+                                <div class="button-container">
+                                    <button class="cal-btn prev-btn">Prev</button>
+                                    <button class="cal-btn today-button">Today</button>
+                                    <button class="cal-btn next-btn">Next</button>
+                                </div>
+                        
+                                <div class="calendar-title"></div>
+                        
+                                <table>
+                                    <thead>
+                                        <tr>
+                                            <td>Mon</td>
+                                            <td>Tue</td>
+                                            <td>Wed</td>
+                                            <td>Thu</td>
+                                            <td>Fri</td>
+                                            <td>Sat</td>
+                                            <td>Sun</td>
+                                        </tr>
+                                    </thead>
+                            
+                                    <tbody class="calendar-body"></tbody>
+                                </table>
+                            </div>
+        
+                        </div>
+               
+                    </div>
+        
+                    
+                    <div class="col-1-3 launches">
+        
+                        <div class="launches-title">
+                            <h2>Upcoming Launches</h2>
+                        </div>
+        
+                        <div class="launches-container scroll-container">
+        
+                            <div class="scrollable"></div>
+        
+                            <div class="launch-details-window"><p id="default-text">Select an upcoming launch to see more information</p></div>
+        
+                        </div>
+                    </div>
+        
+                </div>
+
+            </div>
+        </main>
+
+        <footer>
+
+            <div class="footer-content clear">
+                <p>SpaceX &copy; 2020</p>
+                <a href="#">Twitter</a>
+                <a href="#">YouTube</a>
+                <a href="#">Instagram</a>
+                <a href="#">Flickr</a>
+                <a href="#">LinkedIn</a>
+                <a href="#">Privacy Policy</a>
+            </div>
+
+        </footer>
+
+    </div>
+
+    
+
+
+    
+
+    
+    
+
+
+    
+    <script src="https://unpkg.com/ionicons@5.1.2/dist/ionicons.js"></script>
+    <script src="js/launches.js"></script>
+    <script src="js/navbar.js"></script>
+</body>
+</html>
+
