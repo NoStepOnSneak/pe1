@@ -2,6 +2,10 @@
     padding-top: 0;
 }
 
+h1 {
+    display: none;
+}
+
 .tile-super-container {
     position: relative;
     height: 200vh;
